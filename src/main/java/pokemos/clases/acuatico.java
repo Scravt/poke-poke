@@ -5,5 +5,4 @@ public interface acuatico {
     public  void hidrobomba();
     public void  pistolaDeAgua();
     public  void AroAgua();
-
 }
