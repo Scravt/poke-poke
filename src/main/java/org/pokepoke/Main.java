@@ -1,5 +1,7 @@
 package org.pokepoke;
 
+import batalla.batalla;
+import jugador.jugadorPC;
 import pokemos.lista.bolbasaur;
 import pokemos.lista.pikachu;
 
@@ -7,11 +9,7 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-        pikachu pika = new pikachu();
-        System.out.println("pruba");
-
-        pika.impacTrueno();
-        bolbasaur bolba = new bolbasaur();
-
+       batalla batalla = new batalla();
+       batalla.ejecutarAtaque();
     }
 }

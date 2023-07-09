@@ -19,6 +19,7 @@ public class pikachu extends pokemonBase implements electrico {
     @Override
     protected void curar() {
 
+
     }
 
     @Override
@@ -38,16 +39,19 @@ public class pikachu extends pokemonBase implements electrico {
 
     @Override
     public void cargar() {
+        System.out.println("he realizado una carga");
 
     }
 
     @Override
     public void gigarayo() {
+        System.out.println("he realizado un gigarayo");
 
     }
 
     @Override
     public void punioRayo() {
+        System.out.println("he realizado un punioRayo");
 
     }
 }
