@@ -1,6 +1,6 @@
 package pokemos.clases;
 
-public interface Tierra {
+public interface tierra {
     public abstract void ataqueArena();
     public abstract void terremoto();
     public abstract void excavar();
