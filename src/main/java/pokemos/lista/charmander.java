@@ -50,4 +50,25 @@ public class charmander extends pokemonBase implements fuego {
     protected void incapacitar() {
 
     }
+
+    @Override
+    protected void atacar(int i) {
+        switch (i) {
+            case 1:
+                ascuas();
+                break;
+            case 2:
+                 lansallamas();
+                break;
+            case 3:
+                punioDeFuego();
+                break;
+            case 4:
+                llamarada();
+                break;
+        }
+
+    }
+
+
 }

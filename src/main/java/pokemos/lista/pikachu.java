@@ -3,7 +3,9 @@ package pokemos.lista;
 import pokemos.clases.electrico;
 import pokemos.pokemonBase;
 
+
 public class pikachu extends pokemonBase implements electrico {
+
     public pikachu() {
     }
 
@@ -31,7 +33,6 @@ public class pikachu extends pokemonBase implements electrico {
     protected void incapacitar() {
 
     }
-
     @Override
     public void impacTrueno() {
         System.out.println("he realizado un ataque electric");
@@ -54,4 +55,23 @@ public class pikachu extends pokemonBase implements electrico {
         System.out.println("he realizado un punioRayo");
 
     }
+    @Override
+    public void atacar(int i) {
+        switch (i) {
+            case 1:
+                impacTrueno();
+                break;
+            case 2:
+                cargar();
+                break;
+            case 3:
+                gigarayo();
+                break;
+            case 4:
+                punioRayo();
+                break;
+        }
+    }
+
+
 }

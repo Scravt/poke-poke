@@ -51,4 +51,23 @@ public class gastly extends pokemonBase implements fantasma {
     protected void incapacitar() {
 
     }
+
+    @Override
+    protected void atacar(int i) {
+        switch (i) {
+            case 1:
+                rayoConfuso();
+                break;
+            case 2:
+                tinieblas();
+                break;
+            case 3:
+                lenguatazo();
+                break;
+            case 4:
+                orbesEspectro();
+                break;
+        }
+
+    }
 }

@@ -51,4 +51,25 @@ public class bolbasaur extends pokemonBase implements planta {
     protected void incapacitar() {
 
     }
+
+    @Override
+    protected void atacar(int i) {
+        switch (i) {
+            case 1:
+                hojasNavaja();
+                break;
+            case 2:
+                absorverVida();
+                break;
+            case 3:
+                paralisis();
+                break;
+            case 4:
+                follaje();
+                break;
+        }
+
+    }
+
+
 }

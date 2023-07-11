@@ -34,7 +34,7 @@ public class squirtle extends pokemonBase implements acuatico {
     }
 
     @Override
-    public void AroAgua() {
+    public void aroAgua() {
 
     }
 
@@ -52,4 +52,25 @@ public class squirtle extends pokemonBase implements acuatico {
     protected void incapacitar() {
 
     }
+
+    @Override
+    protected void atacar( int i) {
+        switch (i) {
+            case 1:
+                ataqueDeBorbujas();
+                break;
+            case 2:
+                hidrobomba();
+                break;
+            case 3:
+                pistolaDeAgua();
+                break;
+            case 4:
+                aroAgua();
+                break;
+        }
+
+    }
+
+
 }

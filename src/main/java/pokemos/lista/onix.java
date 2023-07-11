@@ -31,6 +31,8 @@ public class onix extends pokemonBase implements roca {
 
     }
 
+
+
     @Override
     public void avalancha() {
 
@@ -42,12 +44,31 @@ public class onix extends pokemonBase implements roca {
     }
 
     @Override
-    public void Endurecer() {
+    public void endurecer() {
 
     }
 
     @Override
-    public void Pedrada() {
+    public void pedrada() {
+
+    }
+
+    @Override
+    protected void atacar( int i) {
+        switch (i) {
+            case 1:
+                avalancha();
+                break;
+            case 2:
+                lanzaRocas();
+                break;
+            case 3:
+                endurecer();
+                break;
+            case 4:
+                pedrada();
+                break;
+        }
 
     }
 }

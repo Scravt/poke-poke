@@ -50,4 +50,24 @@ public class diglett extends pokemonBase implements tierra {
     public void dispararLodo() {
 
     }
+    @Override
+    protected void atacar(int i) {
+        switch (i) {
+            case 1:
+                ataqueArena();
+                break;
+            case 2:
+                terremoto();
+                break;
+            case 3:
+                excavar();
+                break;
+            case 4:
+                dispararLodo();
+                break;
+        }
+
+    }
+
+
 }
