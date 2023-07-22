@@ -1,8 +1,8 @@
 package pokemos.clases;
 
 public interface fantasma {
-    public abstract void rayoConfuso();
-    public abstract void tinieblas();
-    public abstract void lenguatazo();
-    public abstract void orbesEspectro();
+    public abstract int rayoConfuso();
+    public abstract int tinieblas();
+    public abstract int lenguatazo();
+    public abstract int orbesEspectro();
 }

@@ -1,8 +1,8 @@
 package pokemos.clases;
 
 public interface electrico {
-    public void impacTrueno();
-    public void cargar();
-    public void gigarayo();
-    public void punioRayo();
+    public int impacTrueno();
+    public int cargar();
+    public int gigarayo();
+    public int punioRayo();
 }

@@ -23,8 +23,8 @@ public class pikachu extends pokemonBase implements electrico {
     }
 
     @Override
-    protected void curar() {
-
+    public void curar() {
+        this.vida = vida + 50;
 
     }
 
@@ -33,49 +33,67 @@ public class pikachu extends pokemonBase implements electrico {
 
     }
 
-    @Override
-    protected void incapacitar() {
 
-    }
-    @Override
-    public void impacTrueno() {
-        System.out.println("he realizado un ataque electric");
-    }
-
-    @Override
-    public void cargar() {
-        System.out.println("he realizado una carga");
-
-    }
-
-    @Override
-    public void gigarayo() {
-        System.out.println("he realizado un gigarayo");
-
-    }
-
-    @Override
-    public void punioRayo() {
-        System.out.println("he realizado un punioRayo");
-
-    }
-    @Override
-    public void atacar(int i) {
-        switch (i) {
-            case 1:
-                impacTrueno();
-                break;
-            case 2:
-                cargar();
-                break;
-            case 3:
-                gigarayo();
-                break;
-            case 4:
-                punioRayo();
-                break;
+    public void recibirDanio(int danio) {
+        if (this.vida>danio){
+            this.vida = vida - danio;
+            System.out.println( "la vida actual de pikachu es de " + vida);
+        } else {
+            incapacitar();
         }
     }
 
+    @Override
+    public void incapacitar() {
+        this.vida = 0;
+        System.out.println("Pîkachu ya no puede continuar");
 
+    }
+    @Override
+    public int impacTrueno() {
+
+        System.out.println("he realizado un ataque electric");
+        return 50;
+    }
+
+    @Override
+    public int cargar() {
+        System.out.println("he realizado una carga");
+        return 0;
+    }
+
+    @Override
+    public int gigarayo() {
+        System.out.println("he realizado un gigarayo");
+        return 75;
+
+    }
+
+    @Override
+    public int punioRayo() {
+        System.out.println("he realizado un punioRayo");
+        return 40;
+
+    }
+    @Override
+    public int atacar(int i) {
+        int ataque = 0;
+        switch (i) {
+            case 1:
+                ataque = impacTrueno();
+                break;
+            case 2:
+                ataque = cargar();
+                break;
+            case 3:
+                ataque = gigarayo();
+                break;
+            case 4:
+                ataque = punioRayo();
+                break;
+            default:
+                System.out.println("pikachu no entendio la orden y no hizo nada");
+        }
+        return ataque;
+    }
 }

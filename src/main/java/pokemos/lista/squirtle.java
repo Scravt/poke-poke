@@ -49,12 +49,17 @@ public class squirtle extends pokemonBase implements acuatico {
     }
 
     @Override
+    public void recibirDanio(int danio) {
+
+    }
+
+    @Override
     protected void incapacitar() {
 
     }
 
     @Override
-    protected void atacar( int i) {
+    protected int atacar(int i) {
         switch (i) {
             case 1:
                 ataqueDeBorbujas();
@@ -70,6 +75,7 @@ public class squirtle extends pokemonBase implements acuatico {
                 break;
         }
 
+        return i;
     }
 
 

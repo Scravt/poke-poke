@@ -51,12 +51,17 @@ public class bolbasaur extends pokemonBase implements planta {
     }
 
     @Override
+    public void recibirDanio(int danio) {
+
+    }
+
+    @Override
     protected void incapacitar() {
 
     }
 
     @Override
-    protected void atacar(int i) {
+    protected int atacar(int i) {
         switch (i) {
             case 1:
                 hojasNavaja();
@@ -72,6 +77,7 @@ public class bolbasaur extends pokemonBase implements planta {
                 break;
         }
 
+        return i;
     }
 
 

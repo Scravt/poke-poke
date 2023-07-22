@@ -27,6 +27,11 @@ public class onix extends pokemonBase implements roca {
     }
 
     @Override
+    public void recibirDanio(int danio) {
+
+    }
+
+    @Override
     protected void incapacitar() {
 
     }
@@ -54,7 +59,7 @@ public class onix extends pokemonBase implements roca {
     }
 
     @Override
-    protected void atacar( int i) {
+    protected int atacar(int i) {
         switch (i) {
             case 1:
                 avalancha();
@@ -70,5 +75,6 @@ public class onix extends pokemonBase implements roca {
                 break;
         }
 
+        return i;
     }
 }

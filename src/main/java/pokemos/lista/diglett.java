@@ -27,6 +27,11 @@ public class diglett extends pokemonBase implements tierra {
     }
 
     @Override
+    public void recibirDanio(int danio) {
+
+    }
+
+    @Override
     protected void incapacitar() {
 
     }
@@ -51,7 +56,7 @@ public class diglett extends pokemonBase implements tierra {
 
     }
     @Override
-    protected void atacar(int i) {
+    protected int atacar(int i) {
         switch (i) {
             case 1:
                 ataqueArena();
@@ -67,6 +72,7 @@ public class diglett extends pokemonBase implements tierra {
                 break;
         }
 
+        return i;
     }
 
 

@@ -47,12 +47,17 @@ public class charmander extends pokemonBase implements fuego {
     }
 
     @Override
+    public void recibirDanio(int danio) {
+
+    }
+
+    @Override
     protected void incapacitar() {
 
     }
 
     @Override
-    protected void atacar(int i) {
+    protected int atacar(int i) {
         switch (i) {
             case 1:
                 ascuas();
@@ -68,6 +73,7 @@ public class charmander extends pokemonBase implements fuego {
                 break;
         }
 
+        return i;
     }
 
 

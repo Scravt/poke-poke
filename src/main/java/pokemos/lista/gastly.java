@@ -6,6 +6,8 @@ import pokemos.pokemonBase;
 
 public class gastly extends pokemonBase implements fantasma {
     public gastly() {
+        this.vida = 150;
+        this.tipo = "Fantasma";
     }
 
     public gastly(double vida, String nombre, String tipo, int velocidad, int evasion, int precision) {
@@ -18,28 +20,33 @@ public class gastly extends pokemonBase implements fantasma {
     }
 
     @Override
-    public void rayoConfuso() {
-
+    public int rayoConfuso() {
+        System.out.println("Gastly ha realizado un rayo confuso");
+        return 47;
     }
 
     @Override
-    public void tinieblas() {
-
+    public int tinieblas() {
+        System.out.println("Gastly ha realizado un ataque de tienieblas");
+        return 100;
     }
 
     @Override
-    public void lenguatazo() {
-
+    public int lenguatazo() {
+        System.out.println("Gastly te dio un Lenguetazo");
+        return 30;
     }
 
     @Override
-    public void orbesEspectro() {
+    public int orbesEspectro() {
+        System.out.println("Gastly ha lanzado Orbes espectro");
+        return 60;
 
     }
 
     @Override
     protected void curar() {
-
+        this.vida = vida + 75;
     }
 
     @Override
@@ -48,26 +55,43 @@ public class gastly extends pokemonBase implements fantasma {
     }
 
     @Override
-    protected void incapacitar() {
+    public void recibirDanio(int danio) {
+        if (this.vida>danio){
+            this.vida = vida - danio;
+
+            System.out.println("Gastly recibio daño, su vida acutal es  "+vida + "de 150");
+        } else {
+            incapacitar();
+        }
 
     }
 
     @Override
-    protected void atacar(int i) {
+    protected void incapacitar() {
+        this.vida = 0;
+        System.out.println("Gastly ya no puede continuar");
+    }
+
+    @Override
+    public int atacar(int i) {
+        int ataque = 0;
         switch (i) {
             case 1:
-                rayoConfuso();
+                ataque = rayoConfuso();
                 break;
             case 2:
-                tinieblas();
+                ataque = tinieblas();
                 break;
             case 3:
-                lenguatazo();
+                ataque =lenguatazo();
                 break;
             case 4:
-                orbesEspectro();
+                ataque = orbesEspectro();
                 break;
+            default:
+                System.out.println("Gastly no entendio la orden y no hizo nada");
         }
 
+        return ataque;
     }
 }

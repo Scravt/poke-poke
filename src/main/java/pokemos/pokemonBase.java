@@ -10,9 +10,12 @@ public abstract class pokemonBase {
 
     protected abstract void curar();
     protected abstract void recibirDanio();
+
+    public abstract void recibirDanio(int danio);
+
     protected abstract void incapacitar();
 
-    protected abstract void atacar(int i);
+    protected abstract int atacar(int i);
 
 
 
