@@ -5,12 +5,11 @@ import pokemos.lista.pikachu;
 
 public class Main {
     public static void main(String[] args) {
-            int i;
+            int saludPoke1;
             pikachu pika = new pikachu();
+           saludPoke1 = (int) pika.getVida();
+           System.out.println(saludPoke1);
 
-            for (i=1;i<5;i++){
-                pika.atacar(i);
-            }
 
     }
 }

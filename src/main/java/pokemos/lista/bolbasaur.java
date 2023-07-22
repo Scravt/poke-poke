@@ -5,6 +5,9 @@ import pokemos.clases.planta;
 import pokemos.pokemonBase;
 
 public class bolbasaur extends pokemonBase implements planta {
+
+
+
     public bolbasaur() {
     }
 

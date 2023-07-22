@@ -7,10 +7,14 @@ import pokemos.pokemonBase;
 public class pikachu extends pokemonBase implements electrico {
 
     public pikachu() {
+        this.vida = 150;
+        this.tipo = "electrico";
     }
 
     public pikachu(double vida, String nombre, String tipo, int velocidad, int evasion, int precision) {
         super(vida, nombre, tipo, velocidad, evasion, precision);
+        this.vida = 150;
+        this.tipo = "electrico";
     }
 
     @Override

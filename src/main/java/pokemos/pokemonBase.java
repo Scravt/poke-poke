@@ -1,7 +1,7 @@
 package pokemos;
 
 public abstract class pokemonBase {
-    protected double vida;
+    protected int vida;
     protected String nombre;
     protected String tipo;
     protected int velocidad;
@@ -20,7 +20,7 @@ public abstract class pokemonBase {
     }
 
     public pokemonBase(double vida, String nombre, String tipo, int velocidad, int evasion, int precision) {
-        this.vida = vida;
+        this.vida = (int) vida;
         this.nombre = nombre;
         this.tipo = tipo;
         this.velocidad = velocidad;
@@ -35,7 +35,7 @@ public abstract class pokemonBase {
     }
 
     public void setVida(double vida) {
-        this.vida = vida;
+        this.vida = (int) vida;
     }
 
     public String getNombre() {
