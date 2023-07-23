@@ -1,8 +1,8 @@
-package pokemos.lista;
+package logic.pokemos.lista;
 
 
-import pokemos.clases.fantasma;
-import pokemos.pokemonBase;
+import logic.pokemos.clases.fantasma;
+import logic.pokemos.pokemonBase;
 
 public class gastly extends pokemonBase implements fantasma {
     public gastly() {

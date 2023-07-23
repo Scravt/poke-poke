@@ -1,7 +1,7 @@
-package pokemos.lista;
+package logic.pokemos.lista;
 
-import pokemos.clases.tierra;
-import pokemos.pokemonBase;
+import logic.pokemos.clases.tierra;
+import logic.pokemos.pokemonBase;
 
 public class diglett extends pokemonBase implements tierra {
     public diglett() {

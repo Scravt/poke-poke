@@ -1,6 +1,6 @@
 package org.pokepoke;
-import pokemos.lista.pikachu;
-import pokemos.lista.gastly;
+import logic.pokemos.lista.pikachu;
+import logic.pokemos.lista.gastly;
 import java.util.Scanner;
 
 

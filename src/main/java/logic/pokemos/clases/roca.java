@@ -1,4 +1,4 @@
-package pokemos.clases;
+package logic.pokemos.clases;
 
 public interface roca {
     public abstract void avalancha();

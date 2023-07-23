@@ -1,4 +1,4 @@
-package pokemos;
+package logic.pokemos;
 
 public abstract class pokemonBase {
     protected int vida;

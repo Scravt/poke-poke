@@ -1,40 +1,38 @@
-package pokemos.lista;
+package logic.pokemos.lista;
 
-import pokemos.clases.acuatico;
-import pokemos.pokemonBase;
+import logic.pokemos.clases.fuego;
+import logic.pokemos.pokemonBase;
 
-public class squirtle extends pokemonBase implements acuatico {
-
-    public squirtle() {
+public class charmander extends pokemonBase implements fuego {
+    public charmander() {
     }
 
-    public squirtle(double vida, String nombre, String tipo, int velocidad, int evasion, int precision) {
+    public charmander(double vida, String nombre, String tipo, int velocidad, int evasion, int precision) {
         super(vida, nombre, tipo, velocidad, evasion, precision);
     }
 
-
     @Override
     public String toString() {
-        return "squirtle{}";
+        return "charmander{}";
     }
 
     @Override
-    public void ataqueDeBorbujas() {
-
-    }
-
-    @Override
-    public void hidrobomba() {
+    public void ascuas() {
 
     }
 
     @Override
-    public void pistolaDeAgua() {
+    public void lansallamas() {
 
     }
 
     @Override
-    public void aroAgua() {
+    public void punioDeFuego() {
+
+    }
+
+    @Override
+    public void llamarada() {
 
     }
 
@@ -62,16 +60,16 @@ public class squirtle extends pokemonBase implements acuatico {
     protected int atacar(int i) {
         switch (i) {
             case 1:
-                ataqueDeBorbujas();
+                ascuas();
                 break;
             case 2:
-                hidrobomba();
+                 lansallamas();
                 break;
             case 3:
-                pistolaDeAgua();
+                punioDeFuego();
                 break;
             case 4:
-                aroAgua();
+                llamarada();
                 break;
         }
 

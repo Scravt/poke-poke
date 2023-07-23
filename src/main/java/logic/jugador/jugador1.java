@@ -1,4 +1,4 @@
-package jugador;
+package logic.jugador;
 
 public class jugador1 {
     private String nombre;

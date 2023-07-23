@@ -1,7 +1,7 @@
-package pokemos.lista;
+package logic.pokemos.lista;
 
-import pokemos.clases.electrico;
-import pokemos.pokemonBase;
+import logic.pokemos.clases.electrico;
+import logic.pokemos.pokemonBase;
 
 
 public class pikachu extends pokemonBase implements electrico {

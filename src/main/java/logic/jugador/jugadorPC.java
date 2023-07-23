@@ -1,4 +1,4 @@
-package jugador;
+package logic.jugador;
 
 public class jugadorPC {
     private String nombre = "Lucius";

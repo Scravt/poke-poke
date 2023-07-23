@@ -1,7 +1,7 @@
-package batalla;
+package logic.battle;
 
-import jugador.jugadorPC;
-import pokemos.lista.pikachu;
+import logic.jugador.jugadorPC;
+import logic.pokemos.lista.pikachu;
 
 public class batalla {
     pikachu pika = new pikachu();

@@ -1,42 +1,40 @@
-package pokemos.lista;
+package logic.pokemos.lista;
 
+import logic.pokemos.pokemonBase;
+import logic.pokemos.clases.acuatico;
 
-import pokemos.clases.planta;
-import pokemos.pokemonBase;
+public class squirtle extends pokemonBase implements acuatico {
 
-public class bolbasaur extends pokemonBase implements planta {
-
-
-
-    public bolbasaur() {
+    public squirtle() {
     }
 
-    public bolbasaur(double vida, String nombre, String tipo, int velocidad, int evasion, int precision) {
+    public squirtle(double vida, String nombre, String tipo, int velocidad, int evasion, int precision) {
         super(vida, nombre, tipo, velocidad, evasion, precision);
     }
 
+
     @Override
     public String toString() {
-        return "bolbasaur{}";
+        return "squirtle{}";
     }
 
     @Override
-    public void hojasNavaja() {
-
-    }
-
-    @Override
-    public void absorverVida() {
+    public void ataqueDeBorbujas() {
 
     }
 
     @Override
-    public void paralisis() {
+    public void hidrobomba() {
 
     }
 
     @Override
-    public void follaje() {
+    public void pistolaDeAgua() {
+
+    }
+
+    @Override
+    public void aroAgua() {
 
     }
 
@@ -64,16 +62,16 @@ public class bolbasaur extends pokemonBase implements planta {
     protected int atacar(int i) {
         switch (i) {
             case 1:
-                hojasNavaja();
+                ataqueDeBorbujas();
                 break;
             case 2:
-                absorverVida();
+                hidrobomba();
                 break;
             case 3:
-                paralisis();
+                pistolaDeAgua();
                 break;
             case 4:
-                follaje();
+                aroAgua();
                 break;
         }
 

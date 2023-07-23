@@ -1,7 +1,7 @@
-package pokemos.lista;
+package logic.pokemos.lista;
 
-import pokemos.clases.roca;
-import pokemos.pokemonBase;
+import logic.pokemos.pokemonBase;
+import logic.pokemos.clases.roca;
 
 public class onix extends pokemonBase implements roca {
     public onix() {

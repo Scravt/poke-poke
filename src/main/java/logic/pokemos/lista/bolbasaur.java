@@ -1,38 +1,42 @@
-package pokemos.lista;
+package logic.pokemos.lista;
 
-import pokemos.clases.fuego;
-import pokemos.pokemonBase;
 
-public class charmander extends pokemonBase implements fuego {
-    public charmander() {
+import logic.pokemos.clases.planta;
+import logic.pokemos.pokemonBase;
+
+public class bolbasaur extends pokemonBase implements planta {
+
+
+
+    public bolbasaur() {
     }
 
-    public charmander(double vida, String nombre, String tipo, int velocidad, int evasion, int precision) {
+    public bolbasaur(double vida, String nombre, String tipo, int velocidad, int evasion, int precision) {
         super(vida, nombre, tipo, velocidad, evasion, precision);
     }
 
     @Override
     public String toString() {
-        return "charmander{}";
+        return "bolbasaur{}";
     }
 
     @Override
-    public void ascuas() {
-
-    }
-
-    @Override
-    public void lansallamas() {
+    public void hojasNavaja() {
 
     }
 
     @Override
-    public void punioDeFuego() {
+    public void absorverVida() {
 
     }
 
     @Override
-    public void llamarada() {
+    public void paralisis() {
+
+    }
+
+    @Override
+    public void follaje() {
 
     }
 
@@ -60,16 +64,16 @@ public class charmander extends pokemonBase implements fuego {
     protected int atacar(int i) {
         switch (i) {
             case 1:
-                ascuas();
+                hojasNavaja();
                 break;
             case 2:
-                 lansallamas();
+                absorverVida();
                 break;
             case 3:
-                punioDeFuego();
+                paralisis();
                 break;
             case 4:
-                llamarada();
+                follaje();
                 break;
         }
 
