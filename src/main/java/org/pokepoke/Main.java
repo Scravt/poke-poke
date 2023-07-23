@@ -1,12 +1,15 @@
 package org.pokepoke;
+import iu.uiBattle;
 import logic.pokemos.lista.pikachu;
 import logic.pokemos.lista.gastly;
+
+import javax.swing.*;
 import java.util.Scanner;
 
 
 public class Main {
     public static void main(String[] args) {
-            int danioPoke1 =9;
+           /* int danioPoke1 =9;
             int danioPoke2=10;
             pikachu pika = new pikachu();
             gastly gas = new gastly();
@@ -28,6 +31,12 @@ public class Main {
 
             }
             entrada.close();
+            */
+
+
+
+
+
     }
 }
 
